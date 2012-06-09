@@ -367,6 +367,7 @@ JComments.prototype = {
 		if(!c){c='info';}fe.className='comments-form-message-'+c;
 		fe.innerHTML=m;	fe.style.display='block';JComments.prototype.setOpacity(fe.id,100);
 		this.fadeTimer=setTimeout(function(){JComments.prototype.fade('comments-form-message', 100, 0, 1000);}, 6000);
+		window.location.href='#comments-form-message';
 	},
 
 	subscribe: function(o,g){return this.ajax('JCommentsSubscribe',arguments);},
